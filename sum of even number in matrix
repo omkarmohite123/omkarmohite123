@@ -1,0 +1,94 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled16.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMVg9fd17scuoe8MGRtvx82",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/omkarmohite123/omkarmohite123/blob/main/sum%20of%20even%20number%20in%20matrix\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "tQG7mW_whR4A"
+      },
+      "outputs": [],
+      "source": [
+        "Given a numbers n and m followed by n*m numbers in matrix format print the sum of the elements in the matrix the element which is even number\n",
+        "\n",
+        "Input Description:\n",
+        "You will given a number n and m followed by n*m numbers in matrix format . 0<n<100 0,m<100\n",
+        "\n",
+        "Output Description:\n",
+        "print the sum of the elements in the matrix the element which is even number\n",
+        "\n",
+        "Sample Input :\n",
+        "3 3\n",
+        "1 2 3\n",
+        "4 5 6\n",
+        "7 8 9\n",
+        "Sample Output :\n",
+        "20"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "a,b=list(map(int,input().split()))\n",
+        "l=[input().split() for i in range(a)]\n",
+        "c=[]\n",
+        "for i in range(len(l)):\n",
+        "  for j in range(len(l[i])):\n",
+        "    if int(l[i][j])%2==0:\n",
+        "      c.append(int(l[i][j]))\n",
+        "d=0\n",
+        "for i in c:\n",
+        "  d=d+int(i)\n",
+        "print(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GoEikCMIhril",
+        "outputId": "331355cc-c361-4ee0-c161-b53c181a46e5"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3 3\n",
+            "1 2 3\n",
+            "4 5 6\n",
+            "7 8 9\n",
+            "20\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
